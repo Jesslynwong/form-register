@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my form</title>
+    <!-- <script type="text/javascript"></script>     -->
+</head>
+
+<body>
+    <form method="get" id="myform">
+        <label for="text">id: </label><input type="text" name="username" placeholder="input name please"><br />
+
+        password&nbsp;：<input type="password" name="pwd" placeholder="please input password"><br />
+
+        gender:&nbsp; <label for="male">male</label><input type="radio" name="sex" value="man" value="man"> <label
+            for="female">female</label><input type="radio" name="sex" value="female" checked="checked"><br />
+        <!--性别 -->
+
+        hobby&nbsp;&nbsp;: 吃饭<input type="checkbox" name="hobby" value="eat"> 睡觉<input type="checkbox" name="hobby"
+            value="sleep">打豆豆<input type="checkbox" value="hit the beat" name="hobby"><br />
+        <!--爱好 -->
+
+        uploade your picture : <input type="file" value="photo" name="pic"><br /> <!-- 获取头像 -->
+        birth of place：
+        <select id="birthOfPlace">
+            <option value="-1">please choose city</option>
+            <option value="shandong">shandong</option>
+            <option value="guangzhou">guangzhou</option>
+            <option value="shanghai">shanghai</option>
+            <option value="shenzhen">shenzhen</option>
+            <option value="beijing">beijing</option>
+
+        </select><br />
+        comment：<br>
+        <textarea col="50" rows="5" name="comment"></textarea><br>
+        <!-- <button onclick="checkForm();"></button>  -->
+        <!-- input verification code: <input type="button" name="verificateCode"><br /> 短信验证码 -->
+        <div style="color: red; font-size: 14px;" id="notice"></div>
+        <!--警告 -->
+        <input type="button" value="submit" onclick="checkForm();"><br />
+        <!--提交 -->
+        <!-- onclick="checkForm();" -->
+        <input type="reset" value="reset"><br />
+        <!--重置 -->
+    </form>
+</body>
+<script src="form.js"></script>
+</html>
